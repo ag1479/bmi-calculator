@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.input-container {
+  background: #99d5f8;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 410px;
+  margin: 0 auto;
+}
+
+.input-container > div {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+
+.input-container > div > input {
+  padding: 11px 10px 9px 10px;
+  border: none;
+}
+
+#calculate-button {
+  padding: 0.7rem;
+  background: #26b86a;
+  cursor: pointer;
+  margin-left: 110px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 3%;
+}
+
+#calculate-button:hover {
+  background: #2ebd71d8;
+}
+
+.bmi-index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.7rem;
+  background-color: #26b86ad8;
+  margin: 0 auto;
+  height: 230px;
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+abbr {
+  position: relative;
+}
+
+abbr:hover::after {
+  font-size: 1.2rem;
+  content: attr(title);
+  background: #ececec;
+  border-radius: 3px;
+  bottom: 100%;
+  content: attr(title);
+  padding: 0.37rem;
+  width: 160px;
+  position: absolute;
+}
+
+.bmi-ranges {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 381px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  .input-container > div {
+    font-size: 0.8rem;
+    padding: 1.3rem;
+  }
+  .bmi-index-container {
+    height: 290px;
+  }
+  #calculate-button {
+    padding: 0.5rem;
+    margin-left: 35px;
+    font-size: 0.7rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .bmi-ranges {
+    font-size: 1rem;
+  }
+}

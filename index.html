@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title></title>
+  </head>
+  <body>
+    <h1>BMI - Calculator</h1>
+    <div class="input-container">
+      <div>
+        <label for="weight-input" id="weight-label">Weight (kg):</label>
+        <input
+          type="text"
+          id="weight-input"
+          placeholder="Enter your weight here.."
+        />
+      </div>
+      <div>
+        <label for="height-input" id="height-label">Height (cm):</label>
+        <input
+          type="text"
+          id="height-input"
+          placeholder="Enter your height here.."
+        />
+      </div>
+
+      <div>
+        <button id="calculate-button">Calculate</button>
+      </div>
+      <div>
+        <label for="bmi-output" id="bmi-label">Your BMI:</label>
+        <input type="text" id="calculated-bmi" />
+      </div>
+    </div>
+    <div class="bmi-index-container">
+      <h2><abbr title="Body Max Index">BMI</abbr> ranges</h2>
+      <p class="bmi-ranges">
+        Under weight = Less than 18.5<br />
+        Healthy weight = 18.5 to 24.9<br />
+        Overweight range = 25 to 29.9<br />
+        Obese = 30 to 39.9<br />
+      </p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
